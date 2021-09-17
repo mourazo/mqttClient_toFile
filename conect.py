@@ -1,7 +1,7 @@
 import paho.mqtt.client as mqtt
 
 #connections params
-mqttServer = "192.168.1.17" 
+mqttServer = "xxx.xxx.x.x" 
 topic = "topic/topic"
 #for save data into a .dat file
 msgCount = 0
@@ -33,5 +33,5 @@ client = mqtt.Client()
 client.on_connect = on_connect
 client.on_message = on_message
 client.connect(mqttServer, 1883, 60)
-client.username_pw_set(username="prueba", password="prueba") #set the user and pass of the broker
+client.username_pw_set(username="xxxx", password="xxxx") #set the user and pass of the broker
 client.loop_forever()
